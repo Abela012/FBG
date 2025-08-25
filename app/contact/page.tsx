@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Mail, Phone, MapPin, Clock, Send, FileText } from "lucide-react"
 import { useLanguage } from "@/contexts/language-context"
 
+
 export default function ContactPage() {
   const { t } = useLanguage()
 
@@ -16,9 +17,9 @@ export default function ContactPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 dark:text-foreground mb-4">{t('contact.title')}</h1>
-          <p className="text-xl text-gray-600 dark:text-muted-foreground max-w-3xl mx-auto">
+          {/* <p className="text-xl text-gray-600 dark:text-muted-foreground max-w-3xl mx-auto">
             {t('contact.description')}
-          </p>
+          </p> */}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -32,8 +33,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-foreground">{t('contact.email')}</h3>
-                  <p className="text-gray-600 dark:text-muted-foreground">fantahun.gereme@email.com</p>
-                  <p className="text-gray-600 dark:text-muted-foreground">f.gereme@university.edu</p>
+                  <p className="text-gray-600 dark:text-muted-foreground"> fantishb@gmail.com</p>
+                  <p className="text-gray-600 dark:text-muted-foreground">fbogale@kifiya.com</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -42,7 +43,7 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-foreground">{t('contact.phone')}</h3>
-                  <p className="text-gray-600 dark:text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-gray-600 dark:text-muted-foreground">+251 912071104</p>
                   <p className="text-gray-600 dark:text-muted-foreground">Office: +1 (555) 987-6543</p>
                 </div>
               </div>
@@ -52,9 +53,9 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="font-semibold text-gray-900 dark:text-foreground">{t('contact.officeAddress')}</h3>
-                  <p className="text-gray-600 dark:text-muted-foreground">Research Building, Room 301</p>
+                  <p className="text-gray-600 dark:text-muted-foreground">Kifiya Financial Technology, Bole road, Addis Ababa, Ethiopia</p>
                   <p className="text-gray-600 dark:text-muted-foreground">Academic Institution</p>
-                  <p className="text-gray-600 dark:text-muted-foreground">123 University Ave, City, State 12345</p>
+                  <p className="text-gray-600 dark:text-muted-foreground">Addis Ababa University, 5Kilo, Addis Ababa, Ethiopia</p>
                 </div>
               </div>
               <div className="flex items-center space-x-4">
@@ -71,19 +72,33 @@ export default function ContactPage() {
 
             {/* Quick Actions */}
             <div className="space-y-4">
-              <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+              <Button 
+                onClick={() => window.open('mailto:fantishb@gmail.com', '_blank')}
+                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 cursor-pointer"
+              >
                 <Mail className="w-5 h-5 mr-2" />
                 {t('contact.sendEmail')}
               </Button>
-              <Button variant="outline" className="w-full bg-transparent">
+              <Button 
+                onClick={() => {
+                  const link = document.createElement('a');
+                  link.href = '/CV-FantahunBG.pdf';
+                  link.download = 'CV-FantahunBG.pdf';
+                  document.body.appendChild(link);
+                  link.click();
+                  document.body.removeChild(link);
+                }}
+                variant="outline" 
+                className="w-full bg-transparent cursor-pointer"
+              >
                 <FileText className="w-5 h-5 mr-2" />
                 {t('contact.downloadCV')}
               </Button>
             </div>
           </div>
 
-          {/* Contact Form */}
-          <div>
+                    {/* Contact Form */}
+          {/* <div>
             <Card className="border-0 dark:border-border shadow-lg">
               <CardContent className="p-8">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-foreground mb-6">{t('contact.sendMessage')}</h2>
@@ -112,7 +127,7 @@ export default function ContactPage() {
                     <label htmlFor="institution" className="block text-sm font-medium text-gray-700 dark:text-foreground mb-2">
                       {t('contact.institution')}
                     </label>
-                    <Input id="institution" placeholder="Your institution or organization" />
+                      <Input id="institution" placeholder="Your institution or organization" />
                   </div>
                   <div>
                     <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-foreground mb-2">
@@ -140,6 +155,34 @@ export default function ContactPage() {
                 </form>
               </CardContent>
             </Card>
+          </div> */}
+          <div className="flex flex-col h-full">
+           
+            <div className="flex space-x-6">
+              {/* LinkedIn */}
+              <a 
+                href="http://linkedin.com/in/fantahun-bogale-gereme-dr-ing-17390578" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+              >
+                <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+              </a>
+              
+              {/* Twitter/X */}
+              <a 
+                href="https://twitter.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+              >
+                <svg className="w-5 h-5 text-white dark:text-black" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
 

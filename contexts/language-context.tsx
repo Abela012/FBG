@@ -29,7 +29,7 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       // Home Page
       'home.hero.title': 'Welcome to My',
       'home.hero.subtitle': 'Academic Journey',
-      'home.hero.description': 'Dedicated researcher and academic professional committed to advancing knowledge through innovative research, scholarly publications, and meaningful contributions to the academic community.',
+      'home.hero.description': 'Assistant Professor | AI Researcher | Intelligent Data-driven Decisioning Expert | Principal Data Scientist with a strong background in academia-industry collaboration. Teaching and practicing AI in the academia and industry like FinTech, AgTech, and AI policy. Proficient in Python, Java, and C++, and experienced in leading research initiatives and data science teams. Holding a PhD in Computer Science & Technology (AI), MSc and BSc in Computer Science & IT, and an LLB, I offer a unique blend of technical, legal, and ethical insights to drive real-world AI innovation.',
       'home.viewResearch': 'View Research',
       'home.getInTouch': 'Get in Touch',
       'home.academicExcellence': 'Academic Excellence',
@@ -71,10 +71,25 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'about.collaborationDesc': 'Believing in the power of collaborative research and interdisciplinary approaches to solve complex problems.',
       'about.innovation': 'Innovation',
       'about.innovationDesc': 'Constantly seeking new perspectives and innovative solutions to advance knowledge and understanding.',
+      'about.education': 'Education',
+      
+      // Education entries
+      'about.phd.date': '01-07-2017 – 23-06-2021',
+      'about.phd.title': 'PhD in Computer Science and Technology (AI)',
+      'about.phd.university': 'University of Electronic Science and Technology of China, Chengdu, China',
+      'about.msc.date': '01-07-2011 – 16-07-2013',
+      'about.msc.title': 'MSc Degree in Computer Science',
+      'about.msc.university': 'Osmania University, Hyderabad, India',
+      'about.bsc.date': '01-09-2003 – 08-07-2006',
+      'about.bsc.title': 'BSc Degree in Computer Science and Information Technology',
+      'about.bsc.university': 'Haremaya (Alemaya) University, Ethiopia',
+      'about.llb.date': '01-09-2007 – 08-07-2014',
+      'about.llb.title': 'LLB Degree in Law',
+      'about.llb.university': 'Unity University, Addis Ababa, Ethiopia',
       
       // Research Page
       'research.title': 'Research',
-      'research.description': 'Exploring innovative solutions and advancing knowledge across multiple research domains',
+      'research.description': 'Computational Intelligence: Time series analysis, Natural Language Processing, Data Analytics, Data Mining, Text mining, Knowledge Extraction, Process Mining, Computer Vision, AI fairness, multidisciplinary research.',
       'research.activeAreas': 'Active Research Areas',
       'research.collaborativePartners': 'Collaborative Partners',
       'research.publications': 'Research Publications',
@@ -119,6 +134,24 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'publications.stayUpdated': 'Stay Updated',
       'publications.stayUpdatedDesc': 'Get notified about new publications and research updates',
       'publications.subscribe': 'Subscribe to Updates',
+      'publications.books': 'Books',
+      
+      // Actual publication translations (EN)
+      'publications.paper1.title': 'Enhancing Neural Machine Translation',
+      'publications.paper1.abstract': 'Enhancing Neural Machine Translation through Incorporation of Unsupervised Language Understanding and Generation Techniques: The Case of English-Afaan Oromo Translation. Journal of SN Computer Science (accepted for publication)',
+      'publications.paper2.title': 'Early Detection of Fake News',
+      'publications.paper2.abstract': 'Early Detection of Fake News "Before It Flies High" [C]. In Proceedings of the 2nd International Conference on Big Data Technologies (ICBDT2019) 2019: p. 142-148.',
+      'publications.paper3.title': 'Fighting fake news using deep learning',
+      'publications.paper3.abstract': 'un B. Gereme, and W. Zhu. Fighting fake news using deep learning: Pre-trained word embeddings and the embedding layer investigated [C]. 2020 The 3rd International Conference on Computational Intelligence and Intelligent Systems (CIIS 2020), 2020: p. 24-29.',
+      'publications.paper4.title': 'Combating Fake News in “Low-Resource” Languages',
+      'publications.paper4.abstract': 'Amharic Fake News Detection accompanied by resource crafting [J]. Information 2021, 12(1): 20.',
+      'publications.paper5.title': 'OffStreamNG',
+      'publications.paper5.abstract': 'Partial Stream Hybrid Graph Edge Partitioning based on Neighborhood Expansion and Greedy Heuristic [C]. European Conference on Advances in Databases and Information Systems, 2020: 118-128.',
+      'publications.paper6.title': 'Taking Heuristic Based Graph Edge',
+      'publications.paper6.abstract': 'Taking Heuristic Based Graph Edge Partitioning One Step Ahead via OffStream Partitioning Approach. In 2021 IEEE 37th International Conference on Data Engineering (ICDE), 2020.',
+      'publications.paper7.title': 'Graph Computing Systems and Partitioning Techniques',
+      'publications.paper7.abstract': 'Graph Computing Systems and Partitioning Techniques: A Survey. IEEE Access, 10: 118523-118550, 2022. doi: 10.1109/ACCESS.2022.3219422.',
+      
       // Publication content translations (EN)
       'publications.title1': 'Advanced Research Methodologies in Contemporary Studies',
       'publications.title2': 'Innovative Approaches to Complex Problem Solving',
@@ -158,6 +191,52 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'work.keyAchievements': 'Key Achievements',
       'work.coreSkills': 'Core Skills',
       'work.awardsRecognition': 'Awards & Recognition',
+
+      // Work detailed experiences (EN)
+      'work.exp1.position': 'Assistant Professor of CS (AI) and Researcher | Dean/Head of School of Information Technology and Engineering',
+      'work.exp1.institution': 'Addis Ababa University',
+      'work.exp1.location': 'Addis Ababa, Ethiopia',
+      'work.exp1.description': 'Leading the school; teaching PG and UG Artificial Intelligence (AI) and related courses (Machine Learning, Deep Learning, NLP, Computer Vision); developing instructional goals and objectives; initiating, planning and managing projects; providing consultancy; preparing teaching materials and assessments; planning and conducting research; curriculum development and review; supervising students; community services; paper reviews for journals and conferences.',
+
+      'work.exp2.position': 'Lecturer of Computer Science and SE',
+      'work.exp2.institution': 'Bahir Dar University',
+      'work.exp2.location': 'Bahir Dar, Ethiopia',
+      'work.exp2.description': 'Lecturer of Computer Science and Software Engineering.',
+
+      'work.exp3.position': 'Lecturer of Computer Science, IT & IS',
+      'work.exp3.institution': 'Debre Berhan University',
+      'work.exp3.location': 'Debre Berhan, Ethiopia',
+      'work.exp3.description': 'Lecturer of Computer Science, IT & IS.',
+
+      'work.exp4.position': 'Department Head, Lecturer of Computer Science, & HDP Moderator',
+      'work.exp4.institution': 'Dilla University',
+      'work.exp4.location': 'Dilla, Ethiopia',
+      'work.exp4.description': 'Leading the department; moderating HDP for satellite universities and colleges; teaching theoretical and practical CS courses; developing instructional goals; managing projects; consultancy; teaching materials and assessment; research; curriculum development and review; advising students.',
+
+      'work.exp5.position': 'System Automation Team Leader and IT Instructor',
+      'work.exp5.institution': 'Ethio-Limat Company / Micro Business College',
+      'work.exp5.location': 'Addis Ababa, Ethiopia',
+      'work.exp5.description': 'System Automation Team Leader and IT Instructor.',
+
+      'work.exp6.position': 'Intelligent Data-driven Decisioning Consultant | Principal Data Scientist',
+      'work.exp6.institution': 'Kifiya Financial Technology',
+      'work.exp6.location': 'Addis Ababa, Ethiopia',
+      'work.exp6.description': 'Intelligent Data-driven Decisioning Consultant | Principal Data Scientist.',
+
+      'work.exp7.position': 'National AI Strategy Development Consultant',
+      'work.exp7.institution': 'Ethiopian Artificial Intelligence Institute',
+      'work.exp7.location': 'Addis Ababa, Ethiopia',
+      'work.exp7.description': 'Contributed to research and formulation of key strategic issues to advance AI adoption across industries; aligned priorities with national goals for innovation, ethical AI, and workforce development.',
+
+      'work.exp8.position': 'Cofounder and Manager',
+      'work.exp8.institution': 'Tonetor Cyberbizz and Ever New Solutions (IT & Software Development Startups)',
+      'work.exp8.location': 'Addis Ababa, Ethiopia',
+      'work.exp8.description': 'Cofounder and Manager.',
+
+      'work.exp9.position': 'System Automation Project Team Leader',
+      'work.exp9.institution': 'Ethio Limat Company',
+      'work.exp9.location': 'Addis Ababa, Ethiopia',
+      'work.exp9.description': 'Led a team of engineers and IT personnel to design and implement scalable automation solutions.',
       
       // Contact Page
       'contact.title': 'Get in Touch',
@@ -205,8 +284,8 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       
       // Home Page
       'home.hero.title': 'ወደ የእኔ',
-      'home.hero.subtitle': 'የአካዳሚ ጉዞ እርስዎን እንደሚያስተውል',
-      'home.hero.description': 'የተሰጠ ምርምር ሰው እና አካዳሚ ስራ ሰው እንደሆን በአዳዲስ ምርምር ዘዴዎች፣ በስነ-ጽሑፍ ፕራብሊኬሽኖች እና በአካዳሚ ማህበረሰብ ላይ ትልቅ አስተዋጽዖ በማድረግ እውቀትን ለማሳደግ የተሰጠ።',
+      'home.hero.subtitle': 'የአካዳሚ ጉዞ እንኪድ እንቀበላል',
+      'home.hero.description': 'የረዳት ፕሮፌሰር | የAI ምርምር ባለሙያ | የዘመናዊ ውሂብ መሰረተ አስተሳሰብ ባለሙያ | ዋና የውሂብ ሳይንቲስት ከአካዳሚ እና ኢንዱስትሪ ትብብር ጋር ጠንካራ ዳራ ያለው። በአካዳሚ እና በኢንዱስትሪ እንደ FinTech፣ AgTech እና AI ፖሊሲ ውስጥ AI ማስተማር እና መለማመድ። በPython፣ Java እና C++ ውስጥ ችሎታ ያለው እና የምርምር ተነሳሽነቶችን እና የውሂብ ሳይንስ ቡድኖችን በመምራት ልምድ ያለው። የPhD በኮምፒውተር ሳይንስ እና ቴክኖሎጂ (AI)፣ MSc እና BSc በኮምፒውተር ሳይንስ እና IT እና LLB ያለው፣ በእውነተኛ ዓለም AI ፈጠራ ለመንዳት ልዩ የቴክኒክ፣ ህጋዊ እና ስነምግባራዊ ግንዛቤዎችን አቀርባለሁ።',
       'home.viewResearch': 'ምርምር ይመልከቱ',
       'home.getInTouch': 'አድራሻ ያግኙ',
       'home.academicExcellence': 'የአካዳሚ ስኬት',
@@ -248,10 +327,25 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'about.collaborationDesc': 'በትብብር ምርምር እና በዘርፎች መካከል ያለውን አመለካከት ለተወሳሰቡ ችግሮች ለመፍታት ባለው ኃይል እያምን።',
       'about.innovation': 'አዳዲስ ነገሮች',
       'about.innovationDesc': 'እውቀትን እና መረዳትን ለማሳደግ አዳዲስ አመለካከቶች እና አዳዲስ መፍትሄዎች ለመፈለግ ያለማቋረጥ።',
+      'about.education': 'ትምህርት',
+      
+      // Education entries - Amharic
+      'about.phd.date': '01-07-2017 – 23-06-2021',
+      'about.phd.title': 'የዶክትሬት ዲግሪ በኮምፒውተር ሳይንስ እና ቴክኖሎጂ (AI)',
+      'about.phd.university': 'የኤሌክትሮኒክ ሳይንስ እና ቴክኖሎጂ ዩኒቨርሲቲ ቻይና፣ ቸንግዱ፣ ቻይና',
+      'about.msc.date': '01-07-2011 – 16-07-2013',
+      'about.msc.title': 'የሁለተኛ ዲግሪ በኮምፒውተር ሳይንስ',
+      'about.msc.university': 'ኦስማኒያ ዩኒቨርሲቲ፣ ሃይደራባድ፣ ህንድ',
+      'about.bsc.date': '01-09-2003 – 08-07-2006',
+      'about.bsc.title': 'የመጀመሪያ ዲግሪ በኮምፒውተር ሳይንስ እና የመረጃ ቴክኖሎጂ',
+      'about.bsc.university': 'ሃረማያ (አለማያ) ዩኒቨርሲቲ፣ ኢትዮጵያ',
+      'about.llb.date': '01-09-2007 – 08-07-2014',
+      'about.llb.title': 'የህግ ዲግሪ (LLB)',
+      'about.llb.university': 'ዩኒቲ ዩኒቨርሲቲ፣ አዲስ አበባ፣ ኢትዮጵያ',
       
       // Research Page
       'research.title': 'ምርምር',
-      'research.description': 'አዳዲስ መፍትሄዎችን ለመፈለግ እና በብዙ የምርምር መስኮች ላይ እውቀትን ለማሳደግ እያሰራሁ',
+      'research.description': 'የኮምፒውቴሽናል ኢንተለጀንስ: የጊዜ ተከታታይ ትንተና፣ የተፈጥሮ ቋንቋ ሂደት፣ የውሂብ ትንተና፣ የውሂብ ማዳን፣ የጽሑፍ ማዳን፣ የእውቀት ማውጣት፣ የሂደት ማዳን፣ የኮምፒውተር እይታ፣ የAI ፍትሃዊነት፣ የብዙ ዘርፍ ምርምር።',
       'research.activeAreas': 'ንቁ የምርምር መስኮች',
       'research.collaborativePartners': 'ትብብር አጋሮች',
       'research.publications': 'የምርምር ፕራብሊኬሽኖች',
@@ -296,6 +390,24 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'publications.stayUpdated': 'ወቅታዊ ይሁኑ',
       'publications.stayUpdatedDesc': 'ስለ አዳዲስ ፕራብሊኬሽኖች እና የምርምር ዝመናዎች ማሳወቂያ ያግኙ',
       'publications.subscribe': 'ወቅታዊ ለመሆን ይመዝገቡ',
+      'publications.books': 'መጽሐፍት',
+      
+      // Actual publication translations (AM)
+      'publications.paper1.title': 'የነርቭ ማሽን ትርጉም ማሻሻል',
+      'publications.paper1.abstract': 'የነርቭ ማሽን ትርጉም በመላ-ቋንቋ ግንዛቤ እና ማመንጫ ቴክኒኮች ማካተት ማሻሻል: የእንግሊዝኛ-አፋን ኦሮሞ ትርጉም ጉዳይ። የSN ኮምፒውተር ሳይንስ ጽሑፍ (ለመታተም ተቀባይነት ያገኘ)',
+      'publications.paper2.title': 'የውሸት ዜና ቀድሞ ማወቅ',
+      'publications.paper2.abstract': 'የውሸት ዜና "ከፍ ማለቱ በፊት" ቀድሞ ማወቅ [C]. በ2ኛ የዓለም አቀፍ የትልቅ ውሂብ ቴክኖሎጂዎች ወጥመድ (ICBDT2019) ሂደቶች 2019: ገ. 142-148.',
+      'publications.paper3.title': 'ጥልቅ ትምህርት በመጠቀም የውሸት ዜናን መዋጋት',
+      'publications.paper3.abstract': 'ፋንታሁን ቦጋለ ገረመ እና ደብሊው ዡ. ጥልቅ ትምህርት በመጠቀም የውሸት ዜናን መዋጋት: ከቀድሞ-የሰለጠኑ የቃል ኢምቤዲንግ እና የኢምቤዲንግ ንብርብር ምርምር [C]. 2020 3ኛ የዓለም አቀፍ የኮምፒውቴሽናል ኢንተለጀንስ እና ብልጠ ስርዓቶች ወጥመድ (CIIS 2020), 2020: ገ. 24-29.',
+      'publications.paper4.title': 'በ“ዝቅተኛ ሀብት” ቋንቋዎች ውስጥ የውሸት ዜናን መቋቋም',
+      'publications.paper4.abstract': 'ከሃብት ጋር የተያያዘ ሃብት ማቅረብ ጋር የተካተተ የአማርኛ ውሸት ዜና ማወቂያ [J]. Information 2021, 12(1): 20.',
+      'publications.paper5.title': 'OffStreamNG',
+      'publications.paper5.abstract': 'በአድማ ስርአት መሰረት እና በGreedy ሄውሪስቲክ የተመሠረተ የአጠገብ ስርጭት ተዋረድ የግራፍ ጠርዝ መከፋፈል [C]. European Conference on ADBIS 2020: 118-128.',
+      'publications.paper6.title': 'በሄውሪስቲክ ላይ የተመሠረተ የግራፍ ጠርዝ መከፋፈል',
+      'publications.paper6.abstract': 'በOffStream መከፋፈል አቀራረብ በኩል አንድ ደረጃ ወደፊት መውሰድ። በ2021 IEEE ICDE ኮንፈረንስ ውስጥ።',
+      'publications.paper7.title': 'የግራፍ ኮምፒውቲንግ ስርዓቶች እና የመከፋፈል ቴክኒኮች',
+      'publications.paper7.abstract': 'የግራፍ ኮምፒውቲንግ ስርዓቶች እና የመከፋፈል ቴክኒኮች: ጥናት። IEEE Access 2022. doi: 10.1109/ACCESS.2022.3219422.',
+      
       // Publication content translations
       'publications.title1': 'የአዳዲስ ዘዴዎች በዘመናዊ ምርምር ላይ',
       'publications.title2': 'የተወሳሰቡ ችግሮች ለመፍታት አዳዲስ አመለካከቶች',
@@ -335,6 +447,52 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       'work.keyAchievements': 'ዋና ዋና የተገኙ ስኬቶች',
       'work.coreSkills': 'ዋና ዋና ክህሎቶች',
       'work.awardsRecognition': 'ሽልማቶች እና እውቅና',
+      
+      // Work detailed experiences (AM)
+      'work.exp1.position': 'የኮምፒውተር ሳይንስ (AI) ረዳት ፕሮፌሰር እና ምርምር ሰው | የመረጃ ቴክኖሎጂ እና ኢንጂነሪንግ ትምህርት ቤት መሪ',
+      'work.exp1.institution': 'አዲስ አበባ ዩኒቨርሲቲ',
+      'work.exp1.location': 'አዲስ አበባ፣ ኢትዮጵያ',
+      'work.exp1.description': 'ትምህርት ቤቱን መምራት፤ የAI እና ተዛማጅ ኮርሶችን (ML, DL, NLP, CV) ማስተማር፤ አላማዎችን ማበረታታት፤ ፕሮጀክቶችን መጀመርና መቆጣጠር፤ ኮንሰልቲንግ፤ የትምህርት ቁሳቁሶችን እና ግምገማዎችን መዘጋጀት፤ ምርምር፤ የአቅጣጫ ልማትና ግምገማ፤ ተማሪዎችን መከታተል፤ ማህበራዊ አገልግሎት፤ የጽሑፍ ግምገማዎች።',
+
+      'work.exp2.position': 'የኮምፒውተር ሳይንስ እና ሶፍትዌር መምህር',
+      'work.exp2.institution': 'ባህር ዳር ዩኒቨርሲቲ',
+      'work.exp2.location': 'ባህር ዳር፣ ኢትዮጵያ',
+      'work.exp2.description': 'የኮምፒውተር ሳይንስ እና ሶፍትዌር መምህር።',
+
+      'work.exp3.position': 'የኮምፒውተር ሳይንስ፣ IT እና IS መምህር',
+      'work.exp3.institution': 'ደብረ ብርሃን ዩኒቨርሲቲ',
+      'work.exp3.location': 'ደብረ ብርሃን፣ ኢትዮጵያ',
+      'work.exp3.description': 'የኮምፒውተር ሳይንስ፣ IT እና IS መምህር።',
+
+      'work.exp4.position': 'ዲፓርትመንት መሪ፣ የኮምፒውተር ሳይንስ መምህር እና HDP ሞዴሬተር',
+      'work.exp4.institution': 'ዲላ ዩኒቨርሲቲ',
+      'work.exp4.location': 'ዲላ፣ ኢትዮጵያ',
+      'work.exp4.description': 'ዲፓርትመንቱን መመሪያ፤ HDP ፕሮግራም ሞዴሬሽን፤ ኮርሶችን ማስተማር፤ ፕሮጀክት አስተዳደር፤ ኮንሰልቲንግ፤ ምርምር፤ አቅጣጫ ልማትና ግምገማ፤ ተማሪ ምክር።',
+
+      'work.exp5.position': 'የስርዓት ማደራጀት የቡድን መሪ እና የአይቲ መምህር',
+      'work.exp5.institution': 'ኢትዮ-ልማት ኩባንያ / ማይክሮ ቢዝነስ ኮሌጅ',
+      'work.exp5.location': 'አዲስ አበባ፣ ኢትዮጵያ',
+      'work.exp5.description': 'የስርዓት ማደራጀት የቡድን መሪ እና የአይቲ መምህር።',
+
+      'work.exp6.position': 'የጥበብ የውሂብ-መመሪያ ውሳኔ ኮንሰልታንት | ዋና የውሂብ ሳይንቲስት',
+      'work.exp6.institution': 'ኪፊያ ፋይናንስያል ቴክኖሎጂ',
+      'work.exp6.location': 'አዲስ አበባ፣ ኢትዮጵያ',
+      'work.exp6.description': 'የውሂብ-መመሪያ ውሳኔ ኮንሰልታንት | ዋና የውሂብ ሳይንቲስት።',
+
+      'work.exp7.position': 'የብሔራዊ AI ስትራቴጂ ልማት ኮንሰልታንት',
+      'work.exp7.institution': 'የኢትዮጵያ አርቲፊሻል ኢንተለጀንስት ኢንስቲትዩት',
+      'work.exp7.location': 'አዲስ አበባ፣ ኢትዮጵያ',
+      'work.exp7.description': 'ኢንዱስትሪዎች ውስጥ AI መጠቀምን ለማስፋት መሰረታዊ ስትራቴጂዎችን ለማቀናበር ምርምር እና ስራ አተገባበር።',
+
+      'work.exp8.position': 'ተቋቋማ እና አስተዳዳሪ',
+      'work.exp8.institution': 'Tonetor Cyberbizz እና Ever New Solutions (IT እና ሶፍትዌር ልማት ስታርት አፕስ)',
+      'work.exp8.location': 'አዲስ አበባ፣ ኢትዮጵያ',
+      'work.exp8.description': 'ተቋቋማ እና አስተዳዳሪ።',
+
+      'work.exp9.position': 'የስርዓት ማደራጀት ፕሮጀክት የቡድን መሪ',
+      'work.exp9.institution': 'ኢትዮ ልማት ኩባንያ',
+      'work.exp9.location': 'አዲስ አበባ፣ ኢትዮጵያ',
+      'work.exp9.description': 'የሚመጡ መለኪያ መፍትሄዎችን ለማቅረብ የኢንጂነሮች እና የአይቲ ሰራተኞች ቡድን መመሪያ።',
       // Work content translations
       'work.institution1': 'የአዳዲስ ምርምር መስክ',
       'work.institution2': 'የዓለም አቀፍ ምርምር ማዕከል',

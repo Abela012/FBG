@@ -10,12 +10,12 @@ export default function WorkPage() {
 
   const workExperience = [
     {
-      position: t('work.seniorResearcher'),
-      institution: t('work.institution1'),
-      location: t('work.location1'),
-      period: "2022 - Present",
+      position: t('work.exp1.position'),
+      institution: t('work.exp1.institution'),
+      location: t('work.exp1.location'),
+      period: "10-11-2022 – present",
       type: t('work.fullTime'),
-      description: t('work.description1'),
+      description: t('work.exp1.description'),
       achievements: [
         t('work.achievement1'),
         t('work.achievement2'),
@@ -24,12 +24,12 @@ export default function WorkPage() {
       ],
     },
     {
-      position: t('work.researchAssociate'),
-      institution: t('work.institution2'),
-      location: t('work.location2'),
-      period: "2020 - 2022",
+      position: t('work.exp2.position'),
+      institution: t('work.exp2.institution'),
+      location: t('work.exp2.location'),
+      period: "23-09-2016 – 01-07-2017",
       type: t('work.fullTime'),
-      description: t('work.description2'),
+      description: t('work.exp2.description'),
       achievements: [
         t('work.achievement5'),
         t('work.achievement6'),
@@ -38,12 +38,12 @@ export default function WorkPage() {
       ],
     },
     {
-      position: t('work.graduateAssistant'),
-      institution: t('work.institution3'),
-      location: t('work.location3'),
-      period: "2018 - 2020",
+      position: t('work.exp3.position'),
+      institution: t('work.exp3.institution'),
+      location: t('work.exp3.location'),
+      period: "03-11-2015 – 22-09-2016",
       type: t('work.partTime'),
-      description: t('work.description3'),
+      description: t('work.exp3.description'),
       achievements: [
         t('work.achievement9'),
         t('work.achievement10'),
@@ -52,12 +52,12 @@ export default function WorkPage() {
       ],
     },
     {
-      position: t('work.juniorResearcher'),
-      institution: t('work.institution4'),
-      location: t('work.location4'),
-      period: "2016 - 2018",
+      position: t('work.exp4.position'),
+      institution: t('work.exp4.institution'),
+      location: t('work.exp4.location'),
+      period: "14-09-2009 – 03-11-2015",
       type: t('work.fullTime'),
-      description: t('work.description4'),
+      description: t('work.exp4.description'),
       achievements: [
         t('work.achievement13'),
         t('work.achievement14'),
@@ -65,19 +65,89 @@ export default function WorkPage() {
         t('work.achievement16'),
       ],
     },
+    {
+      position: t('work.exp5.position'),
+      institution: t('work.exp5.institution'),
+      location: t('work.exp5.location'),
+      period: "04-09-2006 – 14-09-2009",
+      type: t('work.fullTime'),
+      description: t('work.exp5.description'),
+      achievements: [
+        t('work.achievement5'),
+        t('work.achievement6'),
+        t('work.achievement7'),
+        t('work.achievement8'),
+      ],
+    },
+    {
+      position: t('work.exp6.position'),
+      institution: t('work.exp6.institution'),
+      location: t('work.exp6.location'),
+      period: "2024 – 2025",
+      type: t('work.fullTime'),
+      description: t('work.exp6.description'),
+      achievements: [
+        t('work.achievement5'),
+        t('work.achievement6'),
+        t('work.achievement7'),
+        t('work.achievement8'),
+      ],
+    },
+    {
+      position: t('work.exp7.position'),
+      institution: t('work.exp7.institution'),
+      location: t('work.exp7.location'),
+      period: "2024-2025",
+      type: t('work.fullTime'),
+      description: t('work.exp7.description'),
+      achievements: [
+        t('work.achievement5'),
+        t('work.achievement6'),
+        t('work.achievement7'),
+        t('work.achievement8'),
+      ],
+    },
+    {
+      position: t('work.exp8.position'),
+      institution: t('work.exp8.institution'),
+      location: t('work.exp8.location'),
+      period: "2006-2009",
+      type: t('work.fullTime'),
+      description: t('work.exp8.description'),
+      achievements: [
+        t('work.achievement5'),
+        t('work.achievement6'),
+        t('work.achievement7'),
+        t('work.achievement8'),
+      ],
+    },
+    {
+      position: t('work.exp9.position'),
+      institution: t('work.exp9.institution'),
+      location: t('work.exp9.location'),
+      period: "2006-2009",
+      type: t('work.fullTime'),
+      description: t('work.exp9.description'),
+      achievements: [
+        t('work.achievement5'),
+        t('work.achievement6'),
+        t('work.achievement7'),
+        t('work.achievement8'),
+      ],
+    },
   ]
 
   const skills = [
-    t('work.skill1'),
-    t('work.skill2'),
-    t('work.skill3'),
-    t('work.skill4'),
-    t('work.skill5'),
-    t('work.skill6'),
-    t('work.skill7'),
-    t('work.skill8'),
-    t('work.skill9'),
-    t('work.skill10'),
+    t('Academic Leadership'),
+    t('Industrial Team leadership'),
+    t('Critical thinking, meticulous analytical skills'),
+    t('Data analytics and visualization, research, analytical skill, planning, communication'),
+    t('Programming Languages: Python, Java, C++, SQL, etc.'),
+    t('Machine Learning Techniques: Supervised and unsupervised learning, DL, CV, NLP, etc.'),
+    t('AI/ML Frameworks: TensorFlow, PyTorch, Keras, Scikit-learn'),
+    t('ML Algorithms: Logistic Regression, Decision Tree, Random Forest, CNNs, RNNs, Transformers, etc.'),
+    t('Cloud Platforms: AWS, Google Cloud, etc.'),
+    t('Communication'),
   ]
 
   const awards = [
@@ -107,13 +177,13 @@ export default function WorkPage() {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 dark:text-foreground mb-4">{t('work.title')}</h1>
-          <p className="text-xl text-gray-600 dark:text-muted-foreground max-w-3xl mx-auto">
+          {/* <p className="text-xl text-gray-600 dark:text-muted-foreground max-w-3xl mx-auto">
             {t('work.description')}
-          </p>
+          </p> */}
         </div>
 
         {/* Career Overview */}
-        <div className="grid md:grid-cols-4 gap-8 mb-20">
+        {/* <div className="grid md:grid-cols-4 gap-8 mb-20">
           <div className="text-center">
             <div className="w-16 h-16 bg-blue-100 dark:bg-blue-950/30 rounded-full flex items-center justify-center mx-auto mb-4">
               <Calendar className="w-8 h-8 text-blue-600 dark:text-blue-400" />
@@ -142,16 +212,16 @@ export default function WorkPage() {
             <h3 className="text-2xl font-bold text-gray-900 dark:text-foreground mb-2">3</h3>
             <p className="text-gray-600 dark:text-muted-foreground">{t('work.majorAwards')}</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Work Experience */}
-        <div className="mb-20">
+        <div className="mb-10">
           <h2 className="text-3xl font-bold text-gray-900 dark:text-foreground mb-8">{t('work.workExperience')}</h2>
           <div className="space-y-8">
             {workExperience.map((work, index) => (
-              <Card key={index} className="border-0 dark:border-border shadow-lg">
-                <CardContent className="p-8">
-                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
+              <div key={index} >
+                <div className="p-4">
+                  <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-1">
                     <div className="flex-1">
                       <h3 className="text-2xl font-semibold text-gray-900 dark:text-foreground mb-2">{work.position}</h3>
                       <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -168,26 +238,26 @@ export default function WorkPage() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-foreground mb-3">{t('work.keyAchievements')}:</h4>
-                    <ul className="grid md:grid-cols-2 gap-2">
+                    {/* <h4 className="font-semibold text-gray-900 dark:text-foreground mb-3">{t('work.keyAchievements')}:</h4> */}
+                    {/* <ul className="grid md:grid-cols-2 gap-2">
                       {work.achievements.map((achievement, achIndex) => (
                         <li key={achIndex} className="flex items-start">
                           <span className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
                           <span className="text-gray-600 dark:text-muted-foreground">{achievement}</span>
                         </li>
                       ))}
-                    </ul>
+                    </ul> */}
                   </div>
-                </CardContent>
-              </Card>
+                </div>
+              </div>
             ))}
           </div>
         </div>
 
         {/* Skills & Awards */}
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div >
           {/* Skills */}
-          <div className="bg-white dark:bg-card rounded-2xl p-8 shadow-lg border-0 dark:border-border">
+          <div className="bg-white dark:bg-card rounded-2xl p-8 shadow-lg border-0 dark:border-border max-w-250 mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-foreground mb-6">{t('work.coreSkills')}</h2>
             <div className="flex flex-wrap gap-3">
               {skills.map((skill, index) => (
@@ -199,7 +269,7 @@ export default function WorkPage() {
           </div>
 
           {/* Awards */}
-          <div className="bg-white dark:bg-card rounded-2xl p-8 shadow-lg border-0 dark:border-border">
+          {/* <div className="bg-white dark:bg-card rounded-2xl p-8 shadow-lg border-0 dark:border-border">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-foreground mb-6">{t('work.awardsRecognition')}</h2>
             <div className="space-y-4">
               {awards.map((award, index) => (
@@ -212,7 +282,7 @@ export default function WorkPage() {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

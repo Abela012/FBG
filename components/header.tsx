@@ -16,6 +16,16 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const { t } = useLanguage()
 
+  const stripTrailingSlash = (value: string) => {
+    if (value.length > 1 && value.endsWith("/")) return value.slice(0, -1)
+    return value
+  }
+
+  const stripBasePath = (value: string) => {
+    // Adjust if basePath changes
+    return value.startsWith("/FBG") ? value.slice(4) : value
+  }
+
   const navItems = [
     { href: "/", label: t('header.home') },
     { href: "/about", label: t('header.about') },
@@ -23,6 +33,7 @@ export default function Header() {
     { href: "/publications", label: t('header.publications') },
     { href: "/work", label: t('header.work') },
     { href: "/contact", label: t('header.contact') },
+    {href: "/cv", label: t('cv')},
   ]
 
   const smoothScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -38,7 +49,7 @@ export default function Header() {
   }
 
   return (
-    <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 text-foreground sticky top-0 z-50 shadow-lg transition-all duration-300 border-b border-border">
+    <header className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 text-foreground sticky top-0 z-50 shadow-lg transition-all duration-300 border-b border-border ">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <Link
@@ -63,12 +74,15 @@ export default function Header() {
                 href={item.href}
                 onClick={(e) => smoothScroll(e, item.href)}
                 className={cn(
-                  "text-muted-foreground hover:text-foreground transition-all duration-300 px-3 py-2 rounded-md relative overflow-hidden group",
-                  pathname === item.href && "bg-accent text-accent-foreground",
+                  "text-muted-foreground hover:text-foreground transition-all duration-200 px-3 py-2 rounded-md relative group transform-gpu hover:scale-[1.04] hover:z-10",
+                  (() => {
+                    const currentPath = stripTrailingSlash(stripBasePath(pathname))
+                    const itemHref = stripTrailingSlash(item.href)
+                    return currentPath === itemHref ? "text-foreground font-semibold" : ""
+                  })(),
                 )}
               >
                 <span className="relative z-10">{item.label}</span>
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/20 to-purple-600/20 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
               </Link>
             ))}
             <LanguageSwitcher />

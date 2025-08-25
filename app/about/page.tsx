@@ -2,12 +2,37 @@
 
 import Image from "next/image"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { User, BookOpen, Award, Target, Heart, Lightbulb } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { User, BookOpen, Award, Target, Heart, Lightbulb, Key } from "lucide-react"
 import AnimatedSection from "@/components/animated-section"
 import { useLanguage } from "@/contexts/language-context"
+import { title } from "process"
 
 export default function AboutPage() {
   const { t } = useLanguage()
+
+  const education = [
+    {
+    Date: t('about.phd.date'),
+    title: t('about.phd.title'),
+    university: t('about.phd.university')
+  },
+  {
+    Date: t('about.msc.date'),
+    title: t('about.msc.title'),
+    university: t('about.msc.university')
+  },
+  {
+    Date: t('about.bsc.date'),
+    title: t('about.bsc.title'),
+    university: t('about.bsc.university')
+  },
+  {
+    Date: t('about.llb.date'),
+    title: t('about.llb.title'),
+    university: t('about.llb.university')
+  },
+]
 
   return (
     <div className="bg-gradient-to-br from-slate-50 to-blue-50 dark:from-background dark:via-background dark:to-muted/10 py-20">
@@ -16,9 +41,9 @@ export default function AboutPage() {
         <AnimatedSection animation="fade-up">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-gray-900 dark:text-foreground mb-4">{t('about.title')}</h1>
-            <p className="text-xl text-gray-600 dark:text-muted-foreground max-w-3xl mx-auto">
+            {/* <p className="text-xl text-gray-600 dark:text-muted-foreground max-w-3xl mx-auto">
               {t('about.description')}
-            </p>
+            </p> */}
           </div>
         </AnimatedSection>
 
@@ -54,7 +79,7 @@ export default function AboutPage() {
         </AnimatedSection>
 
         {/* Key Areas */}
-        <AnimatedSection animation="fade-up" delay={1}>
+        {/* <AnimatedSection animation="fade-up" delay={1}>
           <div className="grid lg:grid-cols-3 gap-8 mb-20">
             {[
               {
@@ -95,10 +120,10 @@ export default function AboutPage() {
               </AnimatedSection>
             ))}
           </div>
-        </AnimatedSection>
+        </AnimatedSection> */}
 
         {/* Values & Philosophy */}
-        <AnimatedSection animation="fade-up" delay={2}>
+        {/* <AnimatedSection animation="fade-up" delay={2}>
           <div className="bg-white dark:bg-card rounded-2xl p-12 shadow-lg transition-all duration-300 hover:shadow-xl border-0 dark:border-border">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-foreground mb-8 text-center">{t('about.valuesPhilosophy')}</h2>
             <div className="grid md:grid-cols-3 gap-8">
@@ -138,7 +163,36 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-        </AnimatedSection>
+        </AnimatedSection> */}
+        <div>
+          <h2 className="text-3xl font-bold text-gray-900 dark:text-foreground mb-6">{t('about.education')}</h2>
+            <div>
+              {education.map ((learn,index)=> (
+                 <div key={index} >
+                   <div className="p-4">
+                    <div className="flex flex-col1 lg:flex-row lg:items-start lg:justify-between mb-6">
+                      <div className="flex-1">
+                      <h3 className="text-2xl font-semibold text-gray-900 dark:text-foreground mb-2">
+                          {learn.title}
+                        </h3>
+                        <p className="text-lg text-gray-600 dark:text-muted-foreground">
+                          {learn.university}
+                        </p>
+                      </div>
+                    
+                    <div className="lg:ml-6">
+                      <div className="text-sm">
+                        {learn.Date}
+                      </div>
+                    </div>
+                    </div>
+                   </div>
+                 </div>
+              )
+           
+            )}
+            </div>
+        </div>
       </div>
     </div>
   )

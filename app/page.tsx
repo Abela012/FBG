@@ -20,7 +20,7 @@ export default function HomePage() {
                     <div>
                       <h2 className="text-5xl font-bold text-gray-900 dark:text-foreground mb-6">
                         {t('home.hero.title')} {" "}
-                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                        <span className=" bg-clip-text text-gray-900 dark:text-foreground mb-6">
                           {t('home.hero.subtitle')}
                         </span>
                       </h2>
@@ -51,7 +51,7 @@ export default function HomePage() {
                     </div>
                     <AnimatedSection animation="fade-left" delay={2}>
                       <div className="relative">
-                        <div className="w-full h-96 bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-950/20 dark:to-purple-950/20 rounded-2xl flex items-center justify-center transition-all duration-500 hover:shadow-2xl">
+                        <div >
                           <Image
                             src="/placeholder.svg?height=300&width=300"
                             alt={t('common.name')}
@@ -60,9 +60,9 @@ export default function HomePage() {
                             className="rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
                           />
                         </div>
-                        <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:rotate-12">
+                        {/* <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-full flex items-center justify-center transition-all duration-300 hover:scale-110 hover:rotate-12">
                           <GraduationCap className="w-12 h-12 text-white" />
-                        </div>
+                        </div> */}
                       </div>
                     </AnimatedSection>
                   </div>
@@ -70,7 +70,7 @@ export default function HomePage() {
               </AnimatedSection>
 
               {/* Quick Overview */}
-              <AnimatedSection className="py-20 bg-white dark:bg-card" animation="fade-up">
+              {/* <AnimatedSection className="py-20 bg-white dark:bg-card" animation="fade-up">
                 <div className="container mx-auto px-4">
                   <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold text-gray-900 dark:text-foreground mb-4">{t('home.academicExcellence')}</h2>
@@ -99,7 +99,35 @@ export default function HomePage() {
                     ))}
                   </div>
                 </div>
-              </AnimatedSection>
+              </AnimatedSection> */}
+            <div className="ml-10 pb-10 flex flex-col h-full">
+           
+           <div className="flex space-x-6">
+             {/* LinkedIn */}
+             <a 
+               href="http://linkedin.com/in/fantahun-bogale-gereme-dr-ing-17390578" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+             >
+               <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
+                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+               </svg>
+             </a>
+             
+             {/* Twitter/X */}
+             <a 
+               href="https://twitter.com" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               className="w-10 h-10 bg-black dark:bg-white rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-200 cursor-pointer"
+             >
+               <svg className="w-5 h-5 text-white dark:text-black" fill="currentColor" viewBox="0 0 24 24">
+                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+               </svg>
+             </a>
+           </div>
+         </div>
             </div>
           );
         }
